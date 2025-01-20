@@ -35,12 +35,9 @@ public class ImageController {
                     .body("Only JPG and PNG files are allowed!");
         }
 
-        // List<Image> similarImages = imageService.findImagesByMetadata(name, category, keywords);
-
         List<Image> similarImages = imageService.findImagesByMetadata(name, category);
 
 
-        // Save the image even if no similar images are found
         imageService.saveImage(uploadedImage, name, category, keywords);
 
         if (similarImages.isEmpty()) {
