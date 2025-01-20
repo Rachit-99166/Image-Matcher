@@ -66,6 +66,10 @@ or
 Category: Scientist
 Keywords: Physics
 
+or
+
+Just image and Category: Country (you will get all similar countries)
+
 The system will:
 
 Search for and display images of scientists with related metadata, such as "Physics" or "Scientist".
