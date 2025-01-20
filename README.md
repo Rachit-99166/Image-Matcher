@@ -79,14 +79,14 @@ If no matching images exist, it stores the uploaded image and metadata for futur
 
 Car,
 Animal,
-Electronics,
-Buildings,
+Electronic,
+Building,
 Sports,
-Movies,
+Movie,
 Scientist,
-Athletes,
-Colleges, and 
-Companies.
+Player, 
+Country, and 
+Company.
 
 **Note**: You can add your own category, name, and keyword with the supporting image.
 
