@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ImageMatcherApplication",
+            "request": "launch",
+            "mainClass": "com.ImageMatcherProject.Image_Matcher.ImageMatcherApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-ImageMatcherApplication<Image-Matcher>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
