@@ -8,6 +8,7 @@ import com.ImageMatcherProject.Image_Matcher.Entity.Image;
 import com.ImageMatcherProject.Image_Matcher.Repository.ImageRepo;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -16,9 +17,33 @@ public class ImageService {
     @Autowired
     private ImageRepo imageRepository;
 
-    public List<Image> findImagesByMetadata(String name, String category, String keywords) {
-        return imageRepository.findByNameAndCategoryAndKeywords(name, category, keywords);
+
+
+
+    public List<Image> findImagesByMetadata(String name, String category) {
+    // If both name and category are provided, search by both
+    if (name != null && !name.isEmpty() && category != null && !category.isEmpty()) {
+        return imageRepository.findByNameAndCategory(name, category);
     }
+    // If only name is provided, search by name
+    else if (name != null && !name.isEmpty()) {
+        return imageRepository.findByName(name);
+    }
+    // If only category is provided, search by category
+    else if (category != null && !category.isEmpty()) {
+        return imageRepository.findByCategory(category);
+    }
+    // Return empty list if neither is provided
+    return new ArrayList<>();
+}
+
+
+
+
+
+    // public List<Image> findImagesByMetadata(String name, String category, String keywords) {
+    //     return imageRepository.findByNameAndCategoryAndKeywords(name, category, keywords);
+    // }
     public void saveImage(MultipartFile uploadedImage, String name, String category, String keywords) {
         try {
             Image image = new Image();
