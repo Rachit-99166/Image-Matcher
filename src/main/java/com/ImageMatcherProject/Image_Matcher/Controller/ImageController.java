@@ -38,7 +38,7 @@ public class ImageController {
         List<Image> similarImages = imageService.findImagesByMetadata(name, category);
 
 
-        imageService.saveImage(uploadedImage, name, category, keywords);
+        imageService.saveImage(uploadedImage, name, category, keywords); 
 
         if (similarImages.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)

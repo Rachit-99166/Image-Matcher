@@ -13,8 +13,8 @@ import java.util.List;
 public interface ImageRepo extends JpaRepository<Image, Long> {
     // List<Image> findByNameAndCategoryAndKeywords(String name, String category, String keywords);
 
-    List<Image> findByNameAndCategory(String name, String category);
-    List<Image> findByName(String name);
+    List<Image> findByNameAndCategory(String name, String category); 
+    List<Image> findByName(String name); 
     List<Image> findByCategory(String category);
 
 }
