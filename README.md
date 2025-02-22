@@ -7,7 +7,6 @@
 
 The Image Matcher Project allows users to upload images and search for visually similar images based on metadata. Users can upload an image through file upload. Along with the image, users can input metadata such as name, category, and keywords. This project uses a Spring Boot backend and a responsive frontend built with HTML, CSS, and Bootstrap. The application is hosted on Microsoft Azure, ensuring scalability and reliability. For database it uses SQL and H2DB.
 
-
 # Features
 
 Image Upload:
@@ -49,13 +48,13 @@ Performs metadata-based searches to find similar images.
 
 Search Results:
 
-Displays similar images along with their metadata.
+Displays similar images along with their metadata. 
 
-If no similar images are found, the uploaded image and metadata are stored for future reference.
+If no similar images are found, the uploaded image and metadata are stored for future reference and can be displayed only if you submit again with same metadata.
 
 # Example 
 
-If a user uploads an image of a scientist with the following metadata:  (**Only One Word Allowed**)
+If a user uploads an image of a scientist with the following metadata:  (**Only One Word Allowed && Lowercase Only**)
 
 Name: Einstein
 Category: Scientist
@@ -68,11 +67,11 @@ Keywords: Physics
 
 or
 
-Just image and Category: Country (you will get all similar countries)
+Just image and Category: Country (you will get all countries)
 
 The system will:
 
-Search for and display images of scientists with related metadata, such as "Physics" or "Scientist".
+Search for and display images of scientists with related metadata, such as "Physics or biology or science" or "Scientist".
 
 If no matching images exist, it stores the uploaded image and metadata for future reference which can be seen on website again when user hits submit.
 
@@ -80,13 +79,14 @@ If no matching images exist, it stores the uploaded image and metadata for futur
 
 Car,
 Animal,
-Electronics,
-Buildings,
+Electronic,
+Building,
 Sports,
-Movies,
+Movie,
 Scientist,
-Athletes,
-Colleges, and 
-Companies.
+Player, 
+Country, and 
+Company.
 
-Note: You can add your own category, name, and keyword with the supporting image.
+**Note**: You can add your own category, name, and keyword with the supporting image.
+
