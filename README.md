@@ -11,7 +11,7 @@ The Image Matcher Project allows users to upload images and search for visually 
 
 Image Upload:
 
- 1.Supports uploading images in JPG or PNG formats.
+ 1.Supports uploading images in JPG or PNG formats. 
 Validates file size and type for security and consistency.
 
 Metadata-Based Search:
