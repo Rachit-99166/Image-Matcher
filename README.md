@@ -15,7 +15,7 @@ Image Upload:
 Validates file size and type for security and consistency.
 
 Metadata-Based Search:
- 
+  
 1.Users can input metadata (e.g., name, category, and keywords) to enhance search accuracy.
 
 Similarity Matching:
